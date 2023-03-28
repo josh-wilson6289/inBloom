@@ -14,25 +14,7 @@ function App() {
 
   return (
     <Router>
-      <div>
-        {/* <Nav /> */}
-        {/* <nav>
-          <ul>
-            <li className='nav-item'>
-              <Link to="/">Home</Link>
-            </li>
-            <li className='nav-item'>
-              <Link to="/plants">Plants</Link>
-            </li>
-            <li className='nav-item'>
-              <Link to="/newuser">Users</Link>
-            </li>
-          </ul>
-        </nav> */}
-
-
-        {/*  if they're not logged in */}
-        
+      <div>  
        { !user && <Switch> 
           <Route exact path={"/"}>
             <Home setUser={setUser} user={user}/>
